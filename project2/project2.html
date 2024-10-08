@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project2.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">Expense Tracker</h1>
+        <div class="balance">
+            <h2 class="balance-text">My Balance</h2>
+            <div><span>Rs</span> <span  id='balance-value' > 0000</span></div>
+        </div>
+        <div class="content-box">
+            <div class="income-section">
+                <h3 class="income-text">Income</h3>
+                <div><span>Rs</span> <span  id='income-value' > 0000</span></div>
+            </div>
+            <div class="expense-section"> <h3 class="expense-text">Expense</h3>
+                <div><span>Rs</span> <span  id='expense-value' > 0000</span></div>
+               </div>
+               
+        </div>
+        <div class="history-section">
+            <b>History</b>
+            <div id="history-content">
+            <!--<div id="history-text"></div>
+            <div id="history-amount"></div>-->
+            </div>
+        </div>
+        
+        <div class="transcation-section">
+            <h2 class="transcation-title">Add New Transcation</h2>
+            <div class="transcation-text">
+                <label class='text-label' for="">Text</label><br>
+                <input id="text-input" type="text" placeholder="Enter Text..">
+            </div>
+            <div class="transcation-text">
+                <label class="amount-label" for="">Amount</label>
+                <div class="sub-label">(negative-expense,positive-income)</div>
+                <input type="text" id="amount-input" placeholder="Enter Amount..">
+            </div>
+            <button id="transaction-btn" onclick="balance(); historyinfo();">Add Transaction</button>
+        </div>
+    </div>
+    <script src="project2.js"></script>
+</body>
+</html>
